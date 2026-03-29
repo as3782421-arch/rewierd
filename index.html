@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>REWIRED — Bust the Lust</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Serif+Display:ital@0;1&family=JetBrains+Mono:wght@300;400;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════
+       APP BANNER — top of page, always visible
+       ══════════════════════════════════════════════════ -->
+  <div class="app-banner" id="appBanner">
+    <div class="app-banner-inner">
+      <div class="ab-left">
+        <span class="ab-icon">📱</span>
+        <div class="ab-text">
+          <strong>REWIRED App is coming.</strong>
+          <span>Your pocket shield — content filtering, recovery mode &amp; daily resets. All offline.</span>
+        </div>
+      </div>
+      <div class="ab-right">
+        <a href="#discord" class="ab-notify-btn">Get Notified</a>
+        <button class="ab-close" onclick="closeBanner()" aria-label="Close">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE COMING SOON — top right pill -->
+  <div class="mobile-alert" id="mobileAlert">
+    <span class="alert-dot"></span>
+    <span>Mobile version coming soon</span>
+    <button class="alert-close" onclick="document.getElementById('mobileAlert').style.display='none'">✕</button>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       NAV
+       ══════════════════════════════════════════════════ -->
+  <nav class="nav" id="mainNav">
+    <div class="nav-logo">REWIRED <span class="nav-tagline">— Bust the Lust</span></div>
+    <div class="nav-links">
+      <a href="#story">Story</a>
+      <a href="#health">Health</a>
+      <a href="#the-trap">The Trap</a>
+      <a href="#feed">Feed</a>
+      <a href="#fightback">Fight Back</a>
+      <a href="#extension">Extension</a>
+      <a href="#discord" class="nav-cta">Discord</a>
+    </div>
+    <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#story"     onclick="toggleMenu()">Story</a>
+    <a href="#health"    onclick="toggleMenu()">Health</a>
+    <a href="#the-trap"  onclick="toggleMenu()">The Trap</a>
+    <a href="#feed"      onclick="toggleMenu()">Feed</a>
+    <a href="#fightback" onclick="toggleMenu()">Fight Back</a>
+    <a href="#extension" onclick="toggleMenu()">Extension</a>
+    <a href="#discord"   onclick="toggleMenu()">Discord</a>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════
+       HERO
+       ══════════════════════════════════════════════════ -->
+  <section class="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-tag">A PERSONAL TESTIMONY · FOR THE GENERATION ONLINE</div>
+
+    <h1 class="hero-title">
+      <span class="title-line line-1">THE INTERNET</span>
+      <span class="title-line line-2">BROKE ME.</span>
+      <span class="title-line line-3 italic">I rebuilt myself.</span>
+    </h1>
+
+    <div class="hero-tagline-block">
+      <div class="tagline-label">OUR MISSION</div>
+      <div class="tagline-text">BUST THE LUST.</div>
+      <p class="tagline-sub">Stop fighting what to leave. Start building what to become.</p>
+    </div>
+
+    <p class="hero-sub">
+      I was 13. One search. An autoplay loop built by engineers — not for me, but for my attention.
+      This is what happened after. And how I came back — by doing, not just quitting.
+    </p>
+
+    <div class="hero-scroll-hint">
+      <span>scroll to read</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="hero-stat-bar">
+      <div class="stat">
+        <span class="stat-num" data-target="73">0</span><span class="stat-suffix">%</span>
+        <span class="stat-label">of teens exposed to explicit content before age 14</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" data-target="11">0</span>
+        <span class="stat-label">average age of first online exposure</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num" style="font-size:2rem">Apps</span>
+        <span class="stat-label">#1 delivery vehicle — not strangers</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       STORY
+       ══════════════════════════════════════════════════ -->
+  <section class="section story-section" id="story">
+    <div class="section-label">01 / MY STORY</div>
+    <div class="story-grid">
+      <div class="story-left">
+        <h2 class="section-title">It didn't start<br/><em>with a choice.</em></h2>
+        <div class="story-timeline">
+          <div class="timeline-item" data-age="Age 13">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <strong>The First Encounter</strong>
+              <p>A recommended video. An algorithm that found a child and decided clicks mattered more than consequences. I didn't go looking — it came looking for me.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-age="Age 14–15">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <strong>The Normalisation</strong>
+              <p>Apps and websites served it on loop. The content shaped how I saw myself and others. What felt shocking became familiar — by design.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-age="Age 16">
+            <div class="tl-dot"></div>
+            <div class="tl-content">
+              <strong>The Breaking Point</strong>
+              <p>Relationships felt wrong. Focus was gone. Anxiety surged. I didn't understand why — until I began connecting what I consumed to who I was becoming.</p>
+            </div>
+          </div>
+          <div class="timeline-item" data-age="The Turn">
+            <div class="tl-dot active"></div>
+            <div class="tl-content">
+              <strong>The Decision to Rewire</strong>
+              <p>I stopped asking "how do I quit?" and started asking "what do I build?" That one shift — from restriction to direction — changed everything.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="story-right">
+        <div class="pullquote">
+          <div class="pq-mark">"</div>
+          <p>Don't obsess over what to leave behind.<br/><em>Obsess over what to build ahead.</em></p>
+          <span class="pq-attr">— The shift that actually worked</span>
+        </div>
+        <div class="story-note">
+          <p>This is not a sob story. It is a manual. The content you consumed isn't real — it was manufactured, scripted, and engineered to addict. The real thing — connection, purpose, physical strength, spiritual grounding — is what this site points toward.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       PHYSICAL HEALTH HUB
+       ══════════════════════════════════════════════════ -->
+  <section class="section health-section" id="health">
+    <div class="section-label">02 / YOUR PHYSICAL FOUNDATION</div>
+    <h2 class="section-title center">Build the body.<br/><em>The mind follows.</em></h2>
+    <p class="section-intro center">
+      The fastest way out of a mental trap is a physical action. Pick one. Start today.
+    </p>
+
+    <div class="health-pillars">
+
+      <!-- WORKOUT -->
+      <div class="health-card" onclick="openHealthPanel('workout')">
+        <div class="hc-icon">🏋️</div>
+        <div class="hc-label">WORKOUT</div>
+        <div class="hc-title">Get Physical</div>
+        <p>Resistance kills resistance. Build the habit that rewires dopamine correctly.</p>
+        <div class="hc-arrow">→</div>
+      </div>
+
+      <!-- DIET -->
+      <div class="health-card" onclick="openHealthPanel('diet')">
+        <div class="hc-icon">🥗</div>
+        <div class="hc-label">DIET</div>
+        <div class="hc-title">Fuel Right</div>
+        <p>What you eat changes brain chemistry. Junk fuel, junk thoughts. Clean fuel, clear mind.</p>
+        <div class="hc-arrow">→</div>
+      </div>
+
+      <!-- HYGIENE -->
+      <div class="health-card" onclick="openHealthPanel('hygiene')">
+        <div class="hc-icon">🚿</div>
+        <div class="hc-label">HYGIENE</div>
+        <div class="hc-title">Own Your Day</div>
+        <p>A cold shower. A clean space. A made bed. Self-respect built from the outside in.</p>
+        <div class="hc-arrow">→</div>
+      </div>
+
+      <!-- SLEEP -->
+      <div class="health-card" onclick="openHealthPanel('sleep')">
+        <div class="hc-icon">🌙</div>
+        <div class="hc-label">SLEEP</div>
+        <div class="hc-title">Restore &amp; Reset</div>
+        <p>Sleep is when the brain literally cleans itself. Protect it like it's medicine — because it is.</p>
+        <div class="hc-arrow">→</div>
+      </div>
+
+    </div>
+
+    <!-- ── HEALTH PANEL (slides open on click) ── -->
+    <div class="health-panel" id="healthPanel">
+      <div class="hp-inner" id="healthPanelContent">
+        <!-- dynamically filled -->
+      </div>
+      <button class="hp-close" onclick="closeHealthPanel()">✕ Close</button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       COMMUNITY
+       ══════════════════════════════════════════════════ -->
+  <section class="section community-section" id="community">
+    <div class="section-label">03 / COMMUNITY &amp; GROUNDING</div>
+    <h2 class="section-title">Find your people.<br/><em>Offline first.</em></h2>
+    <p class="section-intro">The antidote to digital isolation is human community. These are real-world spaces — spiritual, mental, and social — that rebuild the bonds the internet erodes.</p>
+
+    <div class="community-grid">
+      <div class="comm-card">
+        <div class="cc-emoji">🕌🛕⛪🕍</div>
+        <h3>Spiritual &amp; Religious Groups</h3>
+        <p>Every faith tradition offers community, discipline, and purpose — three things that directly counter addiction patterns. Find your local group.</p>
+        <div class="cc-links">
+          <a href="https://www.iskcon.org/centers/" target="_blank" class="cc-link">ISKCON Centres</a>
+          <a href="https://www.gurudwaras.in/" target="_blank" class="cc-link">Gurudwaras</a>
+          <a href="https://findamosque.com/" target="_blank" class="cc-link">Find a Mosque</a>
+          <a href="https://www.churchofgodinindia.com/" target="_blank" class="cc-link">Find a Church</a>
+        </div>
+      </div>
+      <div class="comm-card">
+        <div class="cc-emoji">🧠</div>
+        <h3>Mental Wellness Groups</h3>
+        <p>Structured peer support from people who understand the specific challenge of compulsive digital behaviour. No shame. No performance.</p>
+        <div class="cc-links">
+          <a href="https://www.fortishealthcare.com/mental-health" target="_blank" class="cc-link">Fortis Mental Health</a>
+          <a href="https://vandrevalafoundation.com/" target="_blank" class="cc-link">Vandrevala Foundation</a>
+          <a href="https://icallhelpline.org/" target="_blank" class="cc-link">iCall (Free Sessions)</a>
+        </div>
+      </div>
+      <div class="comm-card">
+        <div class="cc-emoji">⚽</div>
+        <h3>Sports &amp; Activity Clubs</h3>
+        <p>Team sport is social medicine. The physical exertion, the camaraderie, the competition — all of it crowds out the digital substitute.</p>
+        <div class="cc-links">
+          <a href="https://playo.co/" target="_blank" class="cc-link">Playo — Find Sports Near You</a>
+          <a href="https://www.youthservices.in/" target="_blank" class="cc-link">Youth Services India</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       THE TRAP
+       ══════════════════════════════════════════════════ -->
+  <section class="section trap-section" id="the-trap">
+    <div class="section-label">04 / HOW IT REACHES YOU</div>
+    <h2 class="section-title center">Apps &amp; Websites<br/><em>are the weapons.</em></h2>
+    <p class="section-intro center">This isn't about evil strangers. It's about systems — designed to maximise engagement at any cost.</p>
+
+    <div class="trap-cards">
+      <div class="trap-card">
+        <div class="card-icon">⚡</div>
+        <div class="card-tag">THE ALGORITHM</div>
+        <h3>Recommendation Engines</h3>
+        <p>YouTube, Instagram, TikTok — their AI learns your edge. One curious click and the system amplifies it endlessly. It's not a bug. It's a retention strategy.</p>
+        <div class="card-verdict bad">HIGH RISK AT ANY AGE</div>
+      </div>
+      <div class="trap-card">
+        <div class="card-icon">📱</div>
+        <div class="card-tag">THE APPS</div>
+        <h3>Social &amp; Chat Apps</h3>
+        <p>Snapchat, Telegram, Discord (unmoderated), DMs on every platform. Easy to share. Impossible to unshare. Content spreads faster than any safeguard.</p>
+        <div class="card-verdict bad">PRIMARY VECTOR FOR MINORS</div>
+      </div>
+      <div class="trap-card">
+        <div class="card-icon">🌐</div>
+        <div class="card-tag">THE WEBSITES</div>
+        <h3>Open Web &amp; Pop-ups</h3>
+        <p>No age gate that actually works. A single click on a banner, a typo in a URL — the open web has no bouncer at 2 AM.</p>
+        <div class="card-verdict bad">ZERO REAL VERIFICATION</div>
+      </div>
+      <div class="trap-card">
+        <div class="card-icon">🔁</div>
+        <div class="card-tag">THE LOOP</div>
+        <h3>The Dopamine Cycle</h3>
+        <p>Explicit content triggers reward circuits. The brain seeks the same hit again — slightly escalated. This is the addiction architecture no one warned us about.</p>
+        <div class="card-verdict warning">WIRED INTO THE PRODUCT</div>
+      </div>
+      <div class="trap-card">
+        <div class="card-icon">🎮</div>
+        <div class="card-tag">THE DISGUISE</div>
+        <h3>Gaming &amp; Modded Apps</h3>
+        <p>Modded APKs, "18+ unlocks" distributed in teen spaces. Parents see a game icon. Kids see an entry point. The packaging is innocent. The content is not.</p>
+        <div class="card-verdict warning">INVISIBLE TO PARENTS</div>
+      </div>
+      <div class="trap-card">
+        <div class="card-icon">🤫</div>
+        <div class="card-tag">THE SILENCE</div>
+        <h3>No One Talks About It</h3>
+        <p>Schools skip it. Parents don't know the platforms. Friends normalise it. Shame keeps victims silent and keeps the system invisible. That's exactly how it survives.</p>
+        <div class="card-verdict neutral">SILENCE = SYSTEMIC HARM</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       FEED
+       ══════════════════════════════════════════════════ -->
+  <section class="section feed-section" id="feed">
+    <div class="section-label">05 / THE REWIRED FEED</div>
+    <h2 class="section-title">See it for<br/><em>what it really is.</em></h2>
+    <p class="section-intro">
+      Not a news feed to scroll mindlessly — a curated lens. Every article here answers one question:
+      <strong>why is what you saw online not real?</strong> Read one. Let it land.
+    </p>
+
+    <div class="feed-filters">
+      <button class="feed-filter active" onclick="filterFeed('all', this)">All</button>
+      <button class="feed-filter" onclick="filterFeed('industry', this)">Industry Truth</button>
+      <button class="feed-filter" onclick="filterFeed('bigtech', this)">Big Tech Trap</button>
+      <button class="feed-filter" onclick="filterFeed('science', this)">Brain Science</button>
+      <button class="feed-filter" onclick="filterFeed('real', this)">The Real Thing</button>
+    </div>
+
+    <div class="feed-grid" id="feedGrid">
+
+      <!-- INDUSTRY TRUTH -->
+      <article class="feed-card" data-cat="industry">
+        <div class="fc-cat industry">INDUSTRY TRUTH</div>
+        <h3>The Average Performer Signs Contracts They Don't Fully Read</h3>
+        <p>Industry insiders reveal how young people — often desperate, sometimes trafficked — enter a system that owns their footage permanently. The scenes you watch? Most were not free choices.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Deception</span>
+          <span class="fc-tag">Trafficking</span>
+        </div>
+        <a href="https://fightthenewdrug.org/the-truth-about-the-porn-industry/" target="_blank" class="fc-read">Read the full report →</a>
+      </article>
+
+      <article class="feed-card" data-cat="industry">
+        <div class="fc-cat industry">INDUSTRY TRUTH</div>
+        <h3>"Authentic" Scenes Are Scripted Down to the Emotion</h3>
+        <p>Directors, lighting crews, multiple takes, retouching, staged "reactions" — every moment of "natural" behaviour is produced. What you believe you're seeing is a performance indistinguishable from a movie.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Fake Reality</span>
+          <span class="fc-tag">Production</span>
+        </div>
+        <a href="https://fightthenewdrug.org/porn-not-real-life/" target="_blank" class="fc-read">Read the full report →</a>
+      </article>
+
+      <article class="feed-card" data-cat="industry">
+        <div class="fc-cat industry">INDUSTRY TRUTH</div>
+        <h3>How Adult Platforms Profit from Underage Content — And Deny It</h3>
+        <p>Investigations into major platforms revealed millions of illegal uploads that stayed live for months. Age verification is theatre. Profit motive is real. You were shown content the law said shouldn't exist.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Platform Failure</span>
+          <span class="fc-tag">Legal</span>
+        </div>
+        <a href="https://www.nytimes.com/2020/12/04/opinion/sunday/pornhub-rape-trafficking.html" target="_blank" class="fc-read">Read the investigation →</a>
+      </article>
+
+      <!-- BIG TECH -->
+      <article class="feed-card" data-cat="bigtech">
+        <div class="fc-cat bigtech">BIG TECH TRAP</div>
+        <h3>One Trillion Dollars Built on Your 8 Seconds of Attention</h3>
+        <p>Big Tech companies are not media companies. They are attention merchants. Every feed, every autoplay, every notification is engineered by behavioural psychologists to keep you inside — regardless of what inside does to you.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Algorithm</span>
+          <span class="fc-tag">Design</span>
+        </div>
+        <a href="https://www.thesocialdilemma.com/" target="_blank" class="fc-read">Watch The Social Dilemma →</a>
+      </article>
+
+      <article class="feed-card" data-cat="bigtech">
+        <div class="fc-cat bigtech">BIG TECH TRAP</div>
+        <h3>Former Google Engineer: "We Built Slot Machines Into Your Phone"</h3>
+        <p>Tristan Harris, ex-Google design ethicist, explains how pull-to-refresh, infinite scroll, and notifications were deliberately modelled on casino mechanics — tested on human psychology until addictive thresholds were found.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Inside Look</span>
+          <span class="fc-tag">Whistleblower</span>
+        </div>
+        <a href="https://www.humanetech.com/" target="_blank" class="fc-read">Center for Humane Tech →</a>
+      </article>
+
+      <article class="feed-card" data-cat="bigtech">
+        <div class="fc-cat bigtech">BIG TECH TRAP</div>
+        <h3>Why Your Recommendation Feed Always Escalates</h3>
+        <p>AI recommendation systems are rewarded for "engagement." The most engaging content is always slightly more extreme than the last. This is not a coincidence — it is the system working exactly as designed. Escalation is the product.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">AI</span>
+          <span class="fc-tag">Escalation</span>
+        </div>
+        <a href="https://www.wired.com/story/rabbit-hole-how-youtube-radicalizes-users/" target="_blank" class="fc-read">Read on Wired →</a>
+      </article>
+
+      <!-- BRAIN SCIENCE -->
+      <article class="feed-card" data-cat="science">
+        <div class="fc-cat science">BRAIN SCIENCE</div>
+        <h3>Your Brain at 13 Was Literally Being Reshaped</h3>
+        <p>The prefrontal cortex — seat of decision-making and impulse control — does not finish developing until age 25. Hyperstimulating content during this period creates neural pathways that compete with normal reward responses for years.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Neuroscience</span>
+          <span class="fc-tag">Development</span>
+        </div>
+        <a href="https://yourbrainonporn.com/" target="_blank" class="fc-read">Read the research →</a>
+      </article>
+
+      <article class="feed-card" data-cat="science">
+        <div class="fc-cat science">BRAIN SCIENCE</div>
+        <h3>The "Coolidge Effect" and Why Content Always Had to Escalate</h3>
+        <p>A biological mechanism causes mammals to seek novelty after habituation. Pornography is engineered around this — infinite new "partners," infinite escalation. The brain's novelty-seeking never saturates. That's why it never felt like enough.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Biology</span>
+          <span class="fc-tag">Dopamine</span>
+        </div>
+        <a href="https://yourbrainonporn.com/tools-for-change/rebooting-basics/coolidge-effect/" target="_blank" class="fc-read">Understand the mechanism →</a>
+      </article>
+
+      <article class="feed-card" data-cat="science">
+        <div class="fc-cat science">BRAIN SCIENCE</div>
+        <h3>Exercise Produces the Same Dopamine as the Loop — Without the Crash</h3>
+        <p>Sustained physical exercise triggers dopamine, serotonin, and endorphin release — the same reward chemicals as compulsive behaviour, but with upward neuroplastic effects. This is why the gym is not a cliché. It is the mechanism.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Recovery</span>
+          <span class="fc-tag">Exercise</span>
+        </div>
+        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1470658/" target="_blank" class="fc-read">PubMed Study →</a>
+      </article>
+
+      <!-- REAL THING -->
+      <article class="feed-card" data-cat="real">
+        <div class="fc-cat real">THE REAL THING</div>
+        <h3>What You Saw Was a Lie. What God Made Is Not.</h3>
+        <p>Every tradition — Islam, Hinduism, Christianity, Sikhism — teaches that the body and intimacy are sacred, not commercial. What the industry sold you was a counterfeit of something real. The real thing requires presence, not a screen.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Spiritual</span>
+          <span class="fc-tag">Truth</span>
+        </div>
+        <a href="https://www.coventheyes.com/porn-statistics/" target="_blank" class="fc-read">Explore further →</a>
+      </article>
+
+      <article class="feed-card" data-cat="real">
+        <div class="fc-cat real">THE REAL THING</div>
+        <h3>Brahmacharya: The Ancient Framework for Mental Clarity</h3>
+        <p>Long before neuroscience, Vedic tradition identified the link between sexual restraint and mental power. Brahmacharya is not repression — it is redirection. Energy that powered compulsion can power creation, focus, and physical excellence.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Spirituality</span>
+          <span class="fc-tag">Vedic</span>
+        </div>
+        <a href="https://www.swamivivekananda.guru/brahmacharya/" target="_blank" class="fc-read">Read Vivekananda on it →</a>
+      </article>
+
+      <article class="feed-card" data-cat="real">
+        <div class="fc-cat real">THE REAL THING</div>
+        <h3>Men Who Quit Report: Better Workouts, Clearer Mind, Actual Confidence</h3>
+        <p>Thousands of documented testimonials consistently report the same sequence after 30–90 days: improved sleep, increased motivation, better eye contact, reduced anxiety, stronger gym performance. The correlation is not coincidental.</p>
+        <div class="fc-meta">
+          <span class="fc-tag">Recovery</span>
+          <span class="fc-tag">Testimony</span>
+        </div>
+        <a href="https://www.reddit.com/r/NoFap/top/?t=all" target="_blank" class="fc-read">Real testimonies →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       FIGHT BACK
+       ══════════════════════════════════════════════════ -->
+  <section class="section fight-section" id="fightback">
+    <div class="section-label">06 / THE FIGHTBACK</div>
+    <div class="fight-intro">
+      <h2 class="section-title">Stop focusing on<br/><em>what to quit.</em></h2>
+      <p>The biggest mistake in recovery is making "stopping" the goal. Stopping is a side-effect of building. Here is what to build.</p>
+    </div>
+
+    <div class="fight-steps">
+      <div class="fight-step">
+        <div class="step-number">01</div>
+        <div class="step-body">
+          <h3>Start with the Body, Not the Mind</h3>
+          <p>Your body is the fastest route to your brain. Before journaling, before podcasts, before strategies — do twenty push-ups. Walk. Run. Lift. Physical action interrupts the pattern faster than any thought will.</p>
+          <div class="step-tool"><span class="tool-label">Go now:</span> Use the Health Hub above → find your nearest gym in one click</div>
+        </div>
+      </div>
+      <div class="fight-step">
+        <div class="step-number">02</div>
+        <div class="step-body">
+          <h3>Understand It Was Never Real</h3>
+          <p>What you consumed was a produced, scripted, manufactured illusion. The "people" you watched were performing, often under contracts they didn't fully understand, for companies profiting from your dopamine. God's creation — real human connection — looks nothing like that.</p>
+          <div class="step-tool"><span class="tool-label">Read:</span> "Your Brain on Porn" — Gary Wilson. Start with Chapter 2.</div>
+        </div>
+      </div>
+      <div class="fight-step">
+        <div class="step-number">03</div>
+        <div class="step-body">
+          <h3>Audit Your Environment Ruthlessly</h3>
+          <p>Delete. Uninstall. Reconfigure. Your phone is an environment. Design it the way you'd design your room — deliberately. Remove every shortcut to the habit.</p>
+          <div class="step-tool"><span class="tool-label">Tool:</span> BlockSite (Chrome) · Cold Turkey (PC) · Screen Time (iOS) · Digital Wellbeing (Android)</div>
+        </div>
+      </div>
+      <div class="fight-step">
+        <div class="step-number">04</div>
+        <div class="step-body">
+          <h3>Replace the Stimulus, Don't Just Block It</h3>
+          <p>Your brain needs stimulation. It will seek it. If you remove the source without providing an alternative, the old pathway wins. The gym, creative work, sport, community — these produce real dopamine without the crash.</p>
+          <div class="step-tool"><span class="tool-label">Framework:</span> Identity shift — you're not "quitting porn." You're becoming someone who doesn't need it.</div>
+        </div>
+      </div>
+      <div class="fight-step">
+        <div class="step-number">05</div>
+        <div class="step-body">
+          <h3>Ground Yourself Spiritually</h3>
+          <p>Every faith tradition has teachings on this — and they predate neuroscience by millennia. Prayer, discipline, community, fasting, service — these are not superstitions. They are tested technologies for human flourishing.</p>
+          <div class="step-tool"><span class="tool-label">Start:</span> Find a religious community near you — see the Community section above</div>
+        </div>
+      </div>
+      <div class="fight-step">
+        <div class="step-number">06</div>
+        <div class="step-body">
+          <h3>Give It Back — Share What You Know</h3>
+          <p>The final stage is transmission. You don't need to be fully healed to help someone else. You just need to be honest about the road. That honesty is more powerful than any campaign.</p>
+          <div class="step-tool"><span class="tool-label">That's why:</span> This website exists. Share this page with someone who needs it.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       EXTENSION
+       ══════════════════════════════════════════════════ -->
+  <section class="section ext-section" id="extension">
+    <div class="section-label">07 / THE TOOL WE'RE BUILDING</div>
+    <div class="ext-grid">
+      <div class="ext-left">
+        <h2 class="section-title">Not a community.<br/><em>A shield.</em></h2>
+        <p>Communities are valuable — we have Discord for that. But the internet needs <em>infrastructure</em> — something that runs silently in the browser and intervenes <em>before</em> the damage happens.</p>
+        <p>We're building a <strong>browser extension</strong> — a lightweight layer that sits between your browser and the open web. Free. Open source. Yours.</p>
+      </div>
+      <div class="ext-right">
+        <div class="ext-mockup">
+          <div class="ext-header">
+            <div class="ext-dot r"></div><div class="ext-dot y"></div><div class="ext-dot g"></div>
+            <span class="ext-title-bar">REWIRED Extension · Active</span>
+          </div>
+          <div class="ext-body">
+            <div class="ext-feature">
+              <div class="ef-icon">🛡️</div>
+              <div><strong>Content Shield</strong><p>Intercepts and classifies content before render — flags, blurs, or redirects based on your profile settings.</p></div>
+            </div>
+            <div class="ext-feature">
+              <div class="ef-icon">🔍</div>
+              <div><strong>Pattern Tracker</strong><p>Shows which sites triggered which patterns — visibility without judgment.</p></div>
+            </div>
+            <div class="ext-feature">
+              <div class="ef-icon">🧠</div>
+              <div><strong>Recovery Mode</strong><p>30-second reset prompt replaces flagged content. A pause. A choice. Every time.</p></div>
+            </div>
+            <div class="ext-feature">
+              <div class="ef-icon">📡</div>
+              <div><strong>No Data Leaves Your Device</strong><p>Everything processes locally. Your browsing is yours. We don't want your data — we want your freedom.</p></div>
+            </div>
+          </div>
+          <div class="ext-footer">
+            <span class="ext-status">● IN DEVELOPMENT</span>
+            <span>Open Source · Free Forever</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       DISCORD
+       ══════════════════════════════════════════════════ -->
+  <section class="section discord-section" id="discord">
+    <div class="section-label">08 / THE REAL COMMUNITY</div>
+    <div class="discord-box">
+      <div class="discord-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="48" height="48"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.002.024.015.047.03.062a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+      </div>
+      <h2>We don't need another website forum.</h2>
+      <p>Real conversations happen in real time. The REWIRED Discord is moderated peer-to-peer discussion — no shame, no judgement. Share your story or just read others.</p>
+      <div class="discord-features">
+        <span>✓ Moderated by real people</span>
+        <span>✓ Age-verified channels</span>
+        <span>✓ Resource library</span>
+        <span>✓ Anonymous intro option</span>
+      </div>
+      <a href="#" class="discord-btn">Join the Discord Server →</a>
+      <p class="discord-note">Server goes live soon. Drop your email to be first in.</p>
+      <div class="email-bar">
+        <input type="email" placeholder="your@email.com" class="email-input" id="emailInput" />
+        <button class="email-btn" onclick="handleNotify(this)">Notify Me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">REWIRED</div>
+        <div class="footer-motto">BUST THE LUST.</div>
+        <p>A personal project turned public testimony.<br/>Built from lived experience, not a grant.</p>
+      </div>
+      <div class="footer-links">
+        <div class="fl-col">
+          <strong>Navigate</strong>
+          <a href="#story">My Story</a>
+          <a href="#health">Health Hub</a>
+          <a href="#the-trap">The Trap</a>
+          <a href="#feed">The Feed</a>
+          <a href="#fightback">Fight Back</a>
+          <a href="#extension">Extension</a>
+        </div>
+        <div class="fl-col">
+          <strong>Help Lines</strong>
+          <a href="tel:9152987821">iCall · 9152987821</a>
+          <a href="tel:9820466627">AASRA · 9820466627</a>
+          <a href="tel:1098">Childline · 1098</a>
+          <a href="https://vandrevalafoundation.com/" target="_blank">Vandrevala Foundation</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 REWIRED — Built with courage, not capital. <em>Bust the Lust.</em></span>
+      <span>Not affiliated with any organisation. Independent testimony.</span>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════
+       HEALTH PANEL TEMPLATES (hidden, JS reads them)
+       ══════════════════════════════════════════════════ -->
+  <template id="tpl-workout">
+    <div class="hp-header">
+      <span class="hp-emoji">🏋️</span>
+      <div>
+        <h3>Workout — Start Here</h3>
+        <p>The gym is the fastest rewire. Consistent resistance training restructures dopamine pathways within 3–4 weeks. No motivation needed to start — just movement.</p>
+      </div>
+    </div>
+    <div class="hp-actions">
+      <div class="hp-action-card primary" onclick="findGymsNearMe()">
+        <div class="hpa-icon">📍</div>
+        <div>
+          <strong>Find Gyms Near Me</strong>
+          <span>Uses your location → opens Google Maps with gyms nearby</span>
+        </div>
+        <div class="hpa-arrow">→</div>
+      </div>
+      <a class="hp-action-card" href="https://www.youtube.com/@JeffNippard" target="_blank">
+        <div class="hpa-icon">▶️</div>
+        <div><strong>Free Workout Plans (YouTube)</strong><span>Jeff Nippard — Science-based beginner to advanced programs</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+      <a class="hp-action-card" href="https://www.nike.com/ntc-app" target="_blank">
+        <div class="hpa-icon">📱</div>
+        <div><strong>Nike Training Club (Free App)</strong><span>Guided workouts — no equipment required for beginners</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+      <a class="hp-action-card" href="https://playo.co/" target="_blank">
+        <div class="hpa-icon">⚽</div>
+        <div><strong>Playo — Find Sports Near You</strong><span>Cricket, football, basketball — book courts and join groups</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+    </div>
+    <div class="hp-tip">💡 <strong>Start rule:</strong> 20 push-ups the moment you feel the urge. The urge doesn't survive physical exertion.</div>
+  </template>
+
+  <template id="tpl-diet">
+    <div class="hp-header">
+      <span class="hp-emoji">🥗</span>
+      <div>
+        <h3>Diet — Fuel the Rewire</h3>
+        <p>Brain chemistry runs on what you eat. Omega-3s, zinc, protein, complex carbohydrates — these directly support dopamine regulation and the neural repair process.</p>
+      </div>
+    </div>
+    <div class="hp-actions">
+      <div class="hp-action-card primary" onclick="findDietNearMe()">
+        <div class="hpa-icon">📍</div>
+        <div><strong>Find Diet Centres Near Me</strong><span>Uses your location → opens Google Maps with nutritionists &amp; healthy food</span></div>
+        <div class="hpa-arrow">→</div>
+      </div>
+      <a class="hp-action-card" href="https://www.healthifyme.com/" target="_blank">
+        <div class="hpa-icon">📱</div>
+        <div><strong>HealthifyMe — Diet Tracking</strong><span>India's top nutrition app — personalised meal plans &amp; calorie tracking</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+      <a class="hp-action-card" href="https://www.zepto.com/" target="_blank">
+        <div class="hpa-icon">🛒</div>
+        <div><strong>Zepto / Blinkit — Healthy Groceries</strong><span>Order clean food ingredients at a discount — 10-minute delivery</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+      <a class="hp-action-card" href="https://www.swiggy.com/restaurants/healthy" target="_blank">
+        <div class="hpa-icon">🥙</div>
+        <div><strong>Swiggy Healthy — Clean Meals Delivered</strong><span>Filter for high-protein, low-junk meals delivered to your door</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+    </div>
+    <div class="hp-tip">💡 <strong>Priority foods:</strong> Eggs, nuts, leafy greens, oats, daal. These directly support serotonin and dopamine production.</div>
+  </template>
+
+  <template id="tpl-hygiene">
+    <div class="hp-header">
+      <span class="hp-emoji">🚿</span>
+      <div>
+        <h3>Hygiene — Respect the Body</h3>
+        <p>Self-respect is built from the outside in. A cold shower, a clean space, brushed teeth at 6 AM — each small act signals to the brain: "I am someone who cares for themselves."</p>
+      </div>
+    </div>
+    <div class="hp-actions">
+      <div class="hp-action-card primary">
+        <div class="hpa-icon">🧊</div>
+        <div><strong>Cold Shower — The 5-Second Rule</strong><span>Turn it cold for 30 seconds each morning. Boosts dopamine by up to 250% naturally. No apps needed.</span></div>
+        <div class="hpa-arrow">✓</div>
+      </div>
+      <a class="hp-action-card" href="https://www.youtube.com/@AndrewHuberman" target="_blank">
+        <div class="hpa-icon">▶️</div>
+        <div><strong>Huberman Lab — Daily Routine Science</strong><span>Evidence-based morning routines that reset the nervous system daily</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+      <a class="hp-action-card" href="https://www.headspace.com/" target="_blank">
+        <div class="hpa-icon">🧘</div>
+        <div><strong>Headspace — 10-min Daily Reset</strong><span>Guided mindfulness practice — builds the pause between urge and action</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+    </div>
+    <div class="hp-checklist">
+      <div class="checklist-title">Daily Non-Negotiables</div>
+      <label><input type="checkbox" /> Cold shower (morning)</label>
+      <label><input type="checkbox" /> Brush teeth × 2</label>
+      <label><input type="checkbox" /> Make your bed</label>
+      <label><input type="checkbox" /> Clean your space for 5 minutes</label>
+      <label><input type="checkbox" /> No phone for first 30 minutes after waking</label>
+    </div>
+    <div class="hp-tip">💡 <strong>Why it matters:</strong> Behavioural research consistently shows that maintaining simple hygiene routines is one of the strongest predictors of recovery consistency.</div>
+  </template>
+
+  <template id="tpl-sleep">
+    <div class="hp-header">
+      <span class="hp-emoji">🌙</span>
+      <div>
+        <h3>Sleep — The Brain's Repair Mode</h3>
+        <p>During deep sleep, the glymphatic system literally flushes toxic proteins from the brain. Compulsive behaviour is dramatically worsened by poor sleep — and recovery is dramatically accelerated by good sleep.</p>
+      </div>
+    </div>
+    <div class="hp-actions">
+      <a class="hp-action-card primary" href="https://www.sleepfoundation.org/sleep-hygiene" target="_blank">
+        <div class="hpa-icon">📚</div>
+        <div><strong>Sleep Foundation — Complete Guide</strong><span>Evidence-based sleep hygiene protocols — the definitive starting point</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+      <a class="hp-action-card" href="https://apps.apple.com/app/sleep-cycle-sleep-tracker/id320606217" target="_blank">
+        <div class="hpa-icon">📱</div>
+        <div><strong>Sleep Cycle App</strong><span>Tracks sleep stages and wakes you at the lightest phase — you feel the difference immediately</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+      <a class="hp-action-card" href="https://www.youtube.com/watch?v=nm1TxQj9IsQ" target="_blank">
+        <div class="hpa-icon">▶️</div>
+        <div><strong>Matthew Walker — "Why We Sleep" Talk</strong><span>The most important science talk you will watch this year. 18 minutes.</span></div>
+        <div class="hpa-arrow">→</div>
+      </a>
+    </div>
+    <div class="hp-checklist">
+      <div class="checklist-title">Sleep Protocol</div>
+      <label><input type="checkbox" /> Phone out of bedroom (or in greyscale &amp; DND)</label>
+      <label><input type="checkbox" /> Same bedtime every night (±30 min)</label>
+      <label><input type="checkbox" /> No screens 60 min before sleep</label>
+      <label><input type="checkbox" /> Room dark and cool (18–20°C)</label>
+      <label><input type="checkbox" /> No caffeine after 2 PM</label>
+    </div>
+    <div class="hp-tip">💡 <strong>Target:</strong> 7–9 hours. Even one night of 6 hours reduces prefrontal cortex function by 40% — making every urge harder to resist.</div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>
